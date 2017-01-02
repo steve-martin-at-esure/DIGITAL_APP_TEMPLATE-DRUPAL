@@ -1,0 +1,1 @@
+docker exec -it digital_app_template /bin/bash

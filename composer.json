@@ -1,0 +1,49 @@
+{
+    "name": "digital-app-template-drupal",
+    "description": "Digital App template for Drupal 8 using Composer and Docker",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.0.20",
+        "drupal-composer/drupal-scaffold": "^1.3.1",
+        "cweagans/composer-patches": "~1.0",
+        "drupal/core": "8.1.x-dev",
+        "drush/drush": "~8.0",
+        "drupal/console": "~0.10",
+        "hirak/prestissimo": "^0.3.3"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::buildScaffold"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::buildScaffold"
+        ],
+        "post-create-project-cmd": "sh scripts/composer/copy_dev_files.sh"
+    },
+    "extra": {
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        }
+    }
+}
