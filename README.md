@@ -38,7 +38,7 @@ http://[NAME_OF_HOST_SERVER]/
 This Digital App consists of the following components:
 
 * **app**: This folder is where you place your 'pre-processed' development code. Files within this folder strcuture will be processed and placed within the 'web' folder. More detail on this Digital App's architecture and components can be found [here](app/README.md).
-* **container**: This folder contains all of the Docker 'container' configuration files used by Docker; e.g. PHP config, etc. This is executed by the Dockerfile when container is built or updated. You will need to rebuild or update the Docker container for any changes to these files to take affect.
+* **container**: This folder contains all of the Docker 'container' configuration files used by Docker; e.g. PHP config, etc. This is executed by the Dockerfile when the container is built or updated. You will need to rebuild/update the Docker container for any changes in this area to take affect.
 * **scripts**: This folder contains a number of scripts required to run, deploy and develop this Digital App. Further details on the scripts available can be found [here](scripts/README.md)
 * **testing**: This folder contains details on how to testing this Digital App. Further details on the tests available can be found [here](testing/README.md)
 *  **web**: _(Requires Install)_ Once the Digital App is installed this folder will contain the 'working' version of the site. This is the folder used by Drupal 8.
