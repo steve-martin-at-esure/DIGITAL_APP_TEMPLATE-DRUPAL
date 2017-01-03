@@ -1,30 +1,7 @@
-Project Authors
-===============
+## Digital Apps Team
 
-Please find below details of the Digital Apps team.
-
-## Delivery Lead:
-
-* Name - Job Title
-
-
-## Product Manager:
-
-* Name - Job Title
-
-
-## Technical Lead:
-
-* Name - Job Title
-
-
-## Developers:
-
-* Name - Job Title
-* Name - Job Title
-
-
-## Testers:
-
-* Name - Job Title
-* Name - Job Title
+* Steve Martin - Technical Lead - Digital Apps
+* Jared Phayer - Full Stack Developer - Digital Apps
+* Colin Morris - Full Stack Developer - Digital Apps
+* Elton Whybrow - Full Stack Developer - Digital Apps
+* Chris Murton - Full Stack Developer - Digital Apps

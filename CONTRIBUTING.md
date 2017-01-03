@@ -31,11 +31,13 @@ When a new Agile story is assigned to a contributor a dedicated feature branch i
 At this point the story's status should be moved to 'in progress'.
 > Instead of branching off of `master`, feature branches use `develop` as their parent branch. Features should never interact directly with `master`.
 
-Please see below for further details on how to make code and configuration changes.
+The developer should then look to make the necessary code and configuration changes within that branch only.
+
+For further details on how to make code and configuration changes please see the Making code and configuration changes section below.
 
 #### Pull Requests and Peer Reviews
 
-Before a story can be considered complete and merged back into `develop` a Peer Review is required. To initate a Peer Review a Pull Request should be opened allowing other developers and/or the technical team lead to review and approver the changes. All issues and comments should be recorded as comments on the GitHub platform.
+Before a story can be considered complete and merged back into `develop` a Peer Review is required. To initiate a Peer Review a Pull Request should be opened allowing other developers and/or the technical team lead to review and approver the changes. All issues and comments should be recorded as comments on the GitHub platform.
 The [PEER_REVIEW.md](PEER_REVIEW.md) checklist should be used to help with this process.
 Once a Pull request has been opened the story's status can be set to 'In Review'.
 > The `develop` branch should be configured to not accept Pull Requests until at least one other reviewer has approved the change. 
@@ -89,13 +91,11 @@ All Hotfix changes should still have an assigned story and should progress throu
 
 All code and configuration changes should be made within the /app/ folder, and deployed to the /web/ folder using the **dev_workflow** scripts.
 
->This is nesscary as the /web/ folder is created by the Drupal 8 composer processes at the point of install or update. Overwriting any existing files.
-
-This appoach also allows us to perform any necessary 'pre-processing' before the file is copied to the /web/ folder.
+>This is necessary as the /web/ folder is created/updated by the Drupal 8 composer process at the point of install or update, overwriting any existing files.
 
 The `./script/dev_workflow/update_now.sh` script performs a one time update.
 
-While the `./script/dev_workflow/start.sh` uses a Grunt process to continously 'watch' the /app/ folder, performing an update whenever it detects a change.
+While the `./script/dev_workflow/start.sh` uses a Grunt process to continuously 'watch' the /app/ folder, performing an update whenever it detects a change.
 
 
 ## Recommended Tool Set

@@ -1,1 +1,1 @@
-docker exec -it digital_app_template /bin/bash
+docker-compose exec web /bin/bash

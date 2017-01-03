@@ -37,7 +37,7 @@ iPhone 6s: Safari (latest version).
 
 ## Performance
 * `<script>` elements should be as low as possible in document.
-* Stylesheets should be in the document `<head>`.
+* Style-sheets should be in the document `<head>`.
 * Cache operations that are expensive (e.g. CPU or bandwidth intensive).
 
 ## Automated Testing

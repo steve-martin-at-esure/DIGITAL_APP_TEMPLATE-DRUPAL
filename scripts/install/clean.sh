@@ -7,4 +7,5 @@ then
 	sudo rm -Rf node_modules
 	sudo rm -Rf vendor
 	sudo rm -Rf web
+	sudo rm composer.lock
 fi

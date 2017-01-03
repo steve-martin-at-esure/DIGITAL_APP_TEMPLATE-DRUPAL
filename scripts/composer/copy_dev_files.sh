@@ -2,6 +2,8 @@
 
 # set -e
 
+chmod 0666 web/sites/default/settings.php
+
 cp -r app/modules web \
 && cp -r app/profiles web \
 && cp -r app/sites web \

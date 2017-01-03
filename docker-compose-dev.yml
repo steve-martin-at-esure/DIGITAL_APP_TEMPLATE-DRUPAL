@@ -3,7 +3,7 @@
 version: '2'
 services:
   web:
-    container_name: digital_app_template
+    container_name: digital_app-template
     build: . # Can't be below this since we have to add files in public/
     ports:
      - "127.0.0.1:8082:80"
@@ -15,10 +15,8 @@ services:
      - ENVIRONMENT=DEV
      - DRUPAL_INSTALL=TRUE
      - SITE_URL=http://localhost:8082
-     - HTPASSWD_USER=${HTPASSWD_USER}
-     - HTPASSWD_PASSWORD=${HTPASSWD_PASSWORD}
   db:
-    container_name: digital_app_template_db
+    container_name: digital_app-template_db
     image: mysql:5.7
     environment:
      - MYSQL_ROOT_PASSWORD=docker

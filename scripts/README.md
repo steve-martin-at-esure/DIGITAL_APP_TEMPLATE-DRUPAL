@@ -3,10 +3,6 @@
 The following is a list of scripts required to run, deploy and develop this Digital App.
 
 ## Index
-### admin
-This folder contains a drupal admin script.
-
-* `new_admin_login.sh` Performs a drush uli command, allowing you to create an admin username and password.
 
 ### composer
 This folder contains two scripts used by the Drupal 8 composer processes.
@@ -23,16 +19,22 @@ Contains data population scripts to ensure the Digital App has some initial data
 ### dev_workflow
 This folder contains two scripts used by the Drupal 8 composer processes.
 
-* `update_now.sh` Usings a Grunt process to pre-process the files within /app/ and then triggers the `copy_dev_files.sh` to copy the files to /web/.
-* `start` similar as above but also uses Grunt to 'watch' the files within /app/, updating them whenever a chnage is detected.
+* `update_now.sh` A Grunt process used to pre-process the files within /app/ and then execute the `copy_dev_files.sh` to copy the files to /web/.
+* `start.sh` similar as above but also uses Grunt to 'watch' the files within /app/, updating them whenever a change is detected.
+* `config_export.sh` Will export the current Drupal config into the /app/config/sync/ folder. 
 
 ### docker
 This folder contains Docker related scripts.
 
 * `access_container.sh` Performs a Docker command allowing you to 'login' to the docker container.
 
+### drupal_admin
+This folder contains scripts to help with Drupal 8 administration.
+
+* `new_admin_login.sh` Performs a drush uli command, allowing you to create the admin username and password.
+
 ### install
-Contains a number scripts for installing (and uninstalling) this Digital App.
+Contains a number scripts for installing (and un-installing) this Digital App.
 
 *  `install_dev.sh` Installs the Digital App and the development workflow files.
 *  `install.sh` Installs the Digital App only.
