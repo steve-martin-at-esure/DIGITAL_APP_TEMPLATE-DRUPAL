@@ -21,7 +21,7 @@ ADD DETAILS HERE ON HOW TO EXECUTE THESE TESTS.
 
 ## Automated System / Unit tests.
 
-The automated system and unit tests ensure that the individual parts of the system perform correctly. This type of test oftern requires the mocking of other parts of the system and/or data.
+The automated system and unit tests ensure that the individual parts of the system perform correctly. This type of test often requires the mocking of other parts of the system and/or data.
 
 ### Coverage
 The full scope of all automated system and unit tests currently being executed can be found in the [UNIT_TEST_COVERAGE.md](UNIT_TEST_COVERAGE.md) file.

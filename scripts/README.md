@@ -1,8 +1,4 @@
-# Digital App Scripts
-
-The following is a list of scripts required to run, deploy and develop this Digital App.
-
-## Index
+## Digital App Scripts
 
 ### composer
 This folder contains two scripts used by the Drupal 8 composer processes.
@@ -21,7 +17,7 @@ This folder contains two scripts used by the Drupal 8 composer processes.
 
 * `update_now.sh` A Grunt process used to pre-process the files within /app/ and then execute the `copy_dev_files.sh` to copy the files to /web/.
 * `start.sh` similar as above but also uses Grunt to 'watch' the files within /app/, updating them whenever a change is detected.
-* `config_export.sh` Will export the current Drupal config into the /app/config/sync/ folder. 
+* `config_export.sh` Will export the current Drupal config into the /app/config/ folder. 
 
 ### docker
 This folder contains Docker related scripts.

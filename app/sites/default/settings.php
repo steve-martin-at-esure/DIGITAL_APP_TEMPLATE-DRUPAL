@@ -764,6 +764,6 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'minimal';
-$config_directories['sync'] = '../app/config/sync';
+$config_directories['sync'] = '../app/config';
 
 

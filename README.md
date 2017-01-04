@@ -1,6 +1,6 @@
 # DIGITAL APP TEMPLATE - DRUPAL
 
-This Digital App is a 'template' for developing other Drupal 8 Digital Apps. The contents of this MD file (and the others found within this repo) outline some of the key elements you should be looking to include when documenting your new Digital App.
+This Digital App is a 'template' for developing other Drupal 8 Digital Apps. The contents of this MD file (and the others found within this repository) outline some of the key elements you should be looking to include when documenting your new Digital App.
  
 Please esure you fork off this GIT repository before you start developing your new Digital App.
 
@@ -37,8 +37,8 @@ http://[NAME_OF_HOST_SERVER]/
 ## Overview
 This Digital App consists of the following components:
 
-* **app**: This folder is where you place your 'pre-processed' development code. Files within this folder strcuture will be processed and placed within the 'web' folder. More detail on this Digital App's architecture and components can be found [here](app/README.md).
-* **container**: This folder contains all of the Docker 'container' configuration files used by Docker; e.g. PHP config, etc. This is executed by the Dockerfile when the container is built or updated. You will need to rebuild/update the Docker container for any changes in this area to take affect.
+* **app**: This folder contains the Digital App's source code. Files within this folder structure are 'compiled' and placed within the 'web' folder - where the Drupal site is located. More detail the architecture and components on this Digital App's can be found [here](app/README.md).
+* **container**: This folder contains all of the Docker 'container' configuration files used by Docker; e.g. PHP config, etc. This is executed by the Dockerfile when the container is built or updated. 
 * **scripts**: This folder contains a number of scripts required to run, deploy and develop this Digital App. Further details on the scripts available can be found [here](scripts/README.md)
 * **testing**: This folder contains details on how to testing this Digital App. Further details on the tests available can be found [here](testing/README.md)
 *  **web**: _(Requires Install)_ Once the Digital App is installed this folder will contain the 'working' version of the site. This is the folder used by Drupal 8.
@@ -52,3 +52,5 @@ For details on contributing best practices please see the [CONTRIBUTING.md](CONT
 
 ## Systems Documentation
 All systems documentation for this Digital App is located on [Confluence](https://myesure.atlassian.net/wiki/).
+
+![esure](README.esure.png "esure")

@@ -20,6 +20,8 @@ The branching strategy used by the Digital Apps team is **Git-Flow**, however th
 
 ![Branching Strategy Image](CONTRIBUTING.flow.png "Digital Apps Branching Strategy")
 
+> Click [here](CONTRIBUTING.flow.png) to view the full image of the diagram above.
+
 
 ### Historical Branches
 
@@ -102,8 +104,8 @@ While the `./script/dev_workflow/start.sh` uses a Grunt process to continuously 
 
 The following suite of tools has been used to develop this Digital App. It's recommended that all contributers use the same tools to help reduce formating conflicts.
 
-* Project Management: [JIRA](https://myesure.atlassian.com/), 
-* Project Documentation: [Confluence](https://myesure.atlassian.com/), 
+* Project Management: [JIRA](https://myesure.atlassian.net/), 
+* Project Documentation: [Confluence](https://myesure.atlassian.net/), 
 * Graphical: [Sketch](https://www.sketchapp.com),
 * Development IDE: [Sublime](https://www.sublimetext.com),
 * Git Client: [SourceTree](https://www.sourcetreeapp.com),
