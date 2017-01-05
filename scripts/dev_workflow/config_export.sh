@@ -1,1 +1,1 @@
-docker-compose exec web drush cex
+sudo docker-compose exec web drush cex

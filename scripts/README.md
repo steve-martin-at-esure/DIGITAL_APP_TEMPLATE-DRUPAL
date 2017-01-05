@@ -11,7 +11,7 @@ This folder contains two scripts used by the Drupal 8 composer processes.
 ### data
 Contains data population scripts to ensure the Digital App has some initial data when it first goes live.
 
-*  (TBD) `day_one` Creates some initial data to ensure the Digital App has some enough to first go live.
+*  (TBD) `day_one` Creates some initial data for when the Digital App first goes live on day one.
 *  (TBD) `update_from_prod` Collects the latest data from the prod server.
 
 ### dev_workflow

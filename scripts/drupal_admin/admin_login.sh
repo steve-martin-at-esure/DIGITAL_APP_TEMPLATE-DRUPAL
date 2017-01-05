@@ -1,1 +1,1 @@
-docker-compose exec web drush uli
+sudo docker-compose exec web drush uli
