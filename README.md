@@ -13,9 +13,28 @@ Please esure you fork off this GIT repository before you start developing your n
 - (Development Only) [NPM](https://www.npmjs.org/) and [Grunt](http://gruntjs.com)
 
 ## Installing
-(From the root directory)
+Please ensure docker is running before running these scripts.
 
 ```
+For Mac:
+Download, Install and run Docker for Mac.
+URL: https://docs.docker.com/engine/installation/mac/#/docker-for-mac
+
+For Unix:
+sudo curl -fsSL https://get.docker.com/ | sh
+sudo yum install python-pip
+sudo pip install backports.ssl_match_hostname --upgrade
+sudo pip install docker-compose
+
+sudo systemctl enable docker.service
+sudo systemctl start docker
+```
+
+
+
+```
+(From the Digital App's 'root' directory)
+
 Development
 ./scripts/install/install_dev.sh
 

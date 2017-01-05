@@ -6,13 +6,12 @@ services:
     container_name: digital_app-template
     build: . # Can't be below this since we have to add files in public/
     ports:
-     - "127.0.0.1:80:80"
+     - "80:80"
     volumes:
      - .:/var/www/html
     links:
      - db
     environment:
-     - SITE_URL=http://localhost:80
      - DRUPAL_INSTALL=TRUE
      - HTPASSWD_USER=${HTPASSWD_USER}
      - HTPASSWD_PASSWORD=${HTPASSWD_PASSWORD}

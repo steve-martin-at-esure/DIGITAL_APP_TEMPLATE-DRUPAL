@@ -17,7 +17,10 @@ This folder contains two scripts used by the Drupal 8 composer processes.
 
 * `update_now.sh` A Grunt process used to pre-process the files within /app/ and then execute the `copy_dev_files.sh` to copy the files to /web/.
 * `start.sh` similar as above but also uses Grunt to 'watch' the files within /app/, updating them whenever a change is detected.
+* `clear_cache.sh` Performs a drush cex command, clearing all of the cache.
 * `config_export.sh` Will export the current Drupal config into the /app/config/ folder. 
+* `config_import.sh` Will export the current Drupal config into the /app/config/ folder. 
+
 
 ### docker
 This folder contains Docker related scripts.
@@ -27,7 +30,8 @@ This folder contains Docker related scripts.
 ### drupal_admin
 This folder contains scripts to help with Drupal 8 administration.
 
-* `new_admin_login.sh` Performs a drush uli command, allowing you to create the admin username and password.
+* `admin_login.sh` Performs a drush uli command, allowing you to create the admin username and password.
+
 
 ### install
 Contains a number scripts for installing (and un-installing) this Digital App.
