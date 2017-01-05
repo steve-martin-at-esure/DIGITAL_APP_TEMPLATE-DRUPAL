@@ -42,6 +42,12 @@ Development
 
 Test or Production
 ./scripts/install/install.sh
+
+Once the Digital App has been installed it's recommended that you create a new Admin user and password,
+using the following script:
+
+./scripts/drupal_admin/set_admin_password.sh
+
 ```
 
 ## Usage
@@ -59,12 +65,14 @@ http://[NAME_OF_HOST_SERVER]/
 This Digital App consists of the following components:
 
 * **app**: This folder contains the Digital App's source code. Files within this folder structure are 'compiled' and placed within the 'web' folder - where the Drupal site is located. More detail the architecture and components on this Digital App's can be found [here](app/README.md).
-* **container**: This folder contains all of the Docker 'container' configuration files used by Docker; e.g. PHP config, etc. This is executed by the Dockerfile when the container is built or updated. 
+
+* **container**: This folder contains all of the Docker 'container' configuration files used by Docker; e.g. PHP config, etc. This is executed by the Dockerfile when the container is built or updated. Further details on the docker container can be found [here](container/README.md).
+
 * **scripts**: This folder contains a number of scripts required to run, deploy and develop this Digital App. Further details on the scripts available can be found [here](scripts/README.md)
-* **testing**: This folder contains details on how to testing this Digital App. Further details on the tests available can be found [here](testing/README.md)
-*  **web**: _(Requires Install)_ Once the Digital App is installed this folder will contain the 'working' version of the site. This is the folder used by Drupal 8.
-*  **vendor**: _(Requires Install)_ This folder contains the packages installed by Composer.
-*  **node_modules**: _(Requires Install)_ This folder contains the packages installed by NPM.
+* **testing**: This folder contains details on how to testing this Digital App. Further details on the tests available can be found [here](testing/README.md).
+*  **web**: _(Created on Install)_ Once the Digital App is installed this folder will contain the 'working' version of the site. This is the folder used by Drupal 8.
+*  **vendor**: _(Created on Install)_ This folder contains the packages installed by Composer.
+*  **node_modules**: _(Created on Install)_ This folder contains the packages installed by NPM.
 
 ## Contributing to this Digital App
 Only esure's Digital Apps team is permitted to update this Digital App. If you have any suggestions or if you find an issue then please contact the team. Please see [AUTHORS.md](AUTHORS.md) for details of the team.

@@ -32,7 +32,7 @@ This folder contains Docker related scripts.
 ### drupal_admin
 This folder contains scripts to help with Drupal 8 administration.
 
-* `admin_login.sh` Performs a drush uli command, allowing you to create the admin username and password.
+* `set_admin_password` Performs a couple of drush commands, to create the  admin username and password.
 
 
 ### install

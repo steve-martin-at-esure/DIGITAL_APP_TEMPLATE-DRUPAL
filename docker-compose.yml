@@ -13,8 +13,6 @@ services:
      - db
     environment:
      - DRUPAL_INSTALL=TRUE
-     - HTPASSWD_USER=${HTPASSWD_USER}
-     - HTPASSWD_PASSWORD=${HTPASSWD_PASSWORD}
   db:
     container_name: digital_app-template_db
     image: mysql:5.7
