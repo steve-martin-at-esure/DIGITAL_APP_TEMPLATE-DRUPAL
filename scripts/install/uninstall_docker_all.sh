@@ -4,10 +4,10 @@ read -p "Are you sure? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    sudo docker stop $(docker ps -a -q)
-	sudo docker rm $(docker ps -a -q)
-	sudo docker rmi $(docker images)
+    sudo docker stop $(sudo docker ps -a -q)
+	sudo docker rm $(sudo docker ps -a -q)
+	sudo docker rmi $(sudo docker images)
 	sudo docker ps
 	sudo docker images
-	sudo docker volume rm $(docker volume ls -q)
+	sudo docker volume rm $(sudo docker volume ls -q)
 fi
