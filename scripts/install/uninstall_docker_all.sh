@@ -9,4 +9,5 @@ then
 	docker rmi $(docker images)
 	docker ps
 	docker images
+	docker volume rm $(docker volume ls -q)
 fi

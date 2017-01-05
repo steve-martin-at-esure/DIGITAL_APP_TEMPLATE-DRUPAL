@@ -3,6 +3,8 @@
 ### composer
 This folder contains two scripts used by the Drupal 8 composer processes.
 
+(Some scripts may need to be run as `SUDO` on a test/prod environment.)
+
 * `ScriptHandler.php` Used to build the core Drupal 8 scaffolding.
 * `copy_dev_files.sh` Copies files from the /app/ folder to the /web/ folder (but doesn't do any pre-processing - see dev_workflow)
 

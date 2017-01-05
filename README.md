@@ -13,7 +13,7 @@ Please esure you fork off this GIT repository before you start developing your n
 - (Development Only) [NPM](https://www.npmjs.org/) and [Grunt](http://gruntjs.com)
 
 ## Installing
-Please ensure docker is running before running these scripts.
+Please download the GIT repository to a wokring folder and ensure docker is running before running these scripts.
 
 ```
 For Mac:
@@ -28,6 +28,8 @@ sudo pip install docker-compose
 
 sudo systemctl enable docker.service
 sudo systemctl start docker
+
+(use `sudo systemctl stop docker` to stop docker after you have finsihed)
 ```
 
 
