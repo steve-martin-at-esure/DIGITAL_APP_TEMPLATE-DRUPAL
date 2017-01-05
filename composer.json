@@ -35,7 +35,7 @@
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::buildScaffold"
         ],
-        "post-create-project-cmd": "sh scripts/composer/copy_dev_files.sh"
+        "post-create-project-cmd": "sh scripts/composer/build_and_copy.sh"
     },
     "extra": {
         "installer-paths": {
