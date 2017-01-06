@@ -1,5 +1,5 @@
 
-echo "Warning: Please access the site before running this script."
+echo "Warning: Please ensure that you have initiated the site by visiting the homepage."
 read -p "Continue? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
