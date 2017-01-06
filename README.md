@@ -38,7 +38,7 @@ sudo systemctl start docker
 (From the Digital App's 'root' directory)
 
 Development
-./scripts/install/install_dev.sh
+./scripts/install/install_local_dev1.sh
 
 Test or Production
 ./scripts/install/install.sh
@@ -55,7 +55,7 @@ Once the Digital App has been installed it can be accessed via the web browser:
 
 ```
 For Development
-http://localhost:8082/
+http://localhost:8081/
 
 For Test or Production
 http://[NAME_OF_HOST_SERVER]/
