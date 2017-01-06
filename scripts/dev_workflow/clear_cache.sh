@@ -1,1 +1,1 @@
-sudo docker-compose exec web drush cc all
+sudo docker-compose exec web drush cache-rebuild
